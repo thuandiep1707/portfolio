@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Thuần Diệp Corp",
     images: [
       {
-        url: "/logo-thuandiep.png", 
+        url: "https://thuandiep.dev/logo-thuandiep.png", 
         width: 400,
         height: 400,
         alt: "Thuần Diệp Corp Logo",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Thuần Diệp Corp",
     description: "Team freelancer Thuần Diệp chuyên cung cấp các giải pháp công nghệ.",
     creator: "@ngovanlong",
-    images: ["/logo-thuandiep.png"],
+    images: ["https://thuandiep.dev/logo-thuandiep.png"],
   },
   robots: {
     index: true,
