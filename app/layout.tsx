@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Thuần Diệp Corp.",
-  description: "Team freelancer Thuần Diệp chuyên cung cấp các giải pháp công nghệ.",
+  description: "Team freelancer Thuần Diệp chuyên cung cấp các giải pháp công nghệ và thiết kế sáng tạo.",
   keywords: ["Ngọ", "Ngọ Văn", "Văn Long", "Long", "Thuần Diệp", "thuandiep", "thuandiep corp.","Thuần Diệp Corp", "Ngọ Văn Long", "Freelancer Team", "Thiết kế 3D", "Lập trình chuyên nghiệp"],
   authors: [{ name: "Ngọ Văn Long" }],
   creator: "Ngọ Văn Long",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Thuần Diệp Corp",
-    description: "Team freelancer Thuần Diệp chuyên cung cấp các giải pháp công nghệ.",
+    description: "Team freelancer Thuần Diệp chuyên cung cấp các giải pháp công nghệ và thiết kế sáng tạo.",
     creator: "@ngovanlong",
     images: ["https://thuandiep.dev/logo-thuandiep.png"],
   },
@@ -62,10 +63,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics gaId="G-545E8WEEV7" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header className=""></header>
+        <main className="">
+          {children}
+        </main>
+        <footer className=""></footer>
       </body>
     </html>
   );
